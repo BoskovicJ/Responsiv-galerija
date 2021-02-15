@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Responziv dizajn</title>
+<meta charset="utf-8">
+<style>
+    
+    .container {
+max-width: 960px;
+width: 90%;
+margin: 0 auto;
+display: flex;
+flex-wrap: wrap;
+flex-direction: row-reverse;
+}
+.container>* {
+          flex: 1 1 160px;
+      }
+.row {
+display: flex;
+flex-flow: row-reverse;
+justify-content: flex-start;
+
+}
+
+.column {
+flex-basis: 20%;
+box-sizing: border-box;
+padding: 8px;
+}
+.box {
+height: 144px;
+background-color:blue;
+}
+@media screen and (max-width: 1024px) {
+.column {
+flex-basis: 33.33%;
+}
+}
+@media screen and (max-width: 768px) {
+.column {
+flex-basis: 50%;
+}
+}
+@media screen and (max-width: 414px) {
+.column {
+flex-basis: 100%;
+}
+
+}
+
+.box img {
+background-image: url(placeholder-image.png);
+background-repeat: no-repeat;
+width: 10px;
+height: 20px;
+}
+
+  
+
+</style>
+
+</head>
+<body>
+    <div class="container">
+
+        <div class="column">
+        <div class="box"></div>
+        </div>
+        <div class="column">
+        <div class="box"></div>
+        </div>
+        <div class="column">
+        <div class="box"></div>
+        </div>
+        <div class="column">
+        <div class="box"></div>
+        </div>
+        <div class="column">
+        <div class="box"></div>
+        </div>
+        <div class="column">
+        <div class="box"></div>
+        </div>
+        <div class="column">
+        <div class="box"></div>
+        </div>
+        <div class="column">
+        <div class="box"></div>
+        </div>
+        <div class="column">
+        <div class="box"></div>
+        </div>
+        <div class="column">
+        <div class="box"></div>
+        </div>
+        </div>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ut tellus facilisis, lobortis eros at, viverra nibh. Nunc gravida porttitor nulla eget lobortis. Curabitur lacinia lacus ut mollis consequat. Phasellus quis nisl quam. Sed enim nisi, commodo ut finibus eu, porttitor a massa. Aenean turpis diam, viverra ut varius nec, sodales ac metus. Morbi laoreet aliquam nulla sed tempor. Pellentesque tempor at velit ac vulputate. Donec id hendrerit diam, at viverra nibh. Donec luctus interdum quam. Pellentesque rhoncus lacus egestas tristique congue. Nullam iaculis ante eu sem volutpat tincidunt. </p>
+
+</body>
+
+
+
+
+
+
+</html>
